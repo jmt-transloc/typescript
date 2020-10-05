@@ -1,0 +1,10 @@
+{
+  "baseUrl": "https://login.transloc.com",
+  "chromeWebSecurity": false,
+  "screenshotsFolder": "cypress/output/screenshots",
+  "videosFolder": "cypress/output/videos",
+  "viewportWidth": 1980,
+  "viewportHeight": 1060,
+  "waitForAnimations": true,
+  "watchForFileChanges": false
+}
