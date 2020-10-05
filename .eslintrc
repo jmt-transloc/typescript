@@ -46,6 +46,10 @@
     }
   },
   "globals": {
+    "after": false,
+    "afterEach": false,
+    "before": false,
+    "beforeEach": false,
     "context": false,
     "cy": false,
     "Cypress": false,
