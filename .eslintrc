@@ -54,7 +54,9 @@
     "cy": false,
     "Cypress": false,
     "describe": false,
+    "expect": false,
     "it": false,
+    "JQuery": false,
     "specify": false
   }
 }

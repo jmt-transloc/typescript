@@ -1,43 +1,8 @@
 import { Factory } from 'fishery';
 
-const faker = require('faker');
+import { Ride } from '../../../support/interfaces/ondemand/interfaces';
 
-export interface Ride {
-  rider?: {
-    first_name: string,
-    last_name: string,
-    email: string,
-    phone: string,
-    username: string,
-  },
-  ride_id?: number | undefined,
-  dropoff?: {
-    address: string,
-    position: {
-      latitude: number,
-      longitude: number,
-    },
-    priority: number,
-  },
-  fare?: number | undefined,
-  messages?: string[],
-  note?: string | undefined,
-  pickup?: {
-    address: string,
-    position: {
-      latitude: number,
-      longitude: number,
-    },
-    priority: number,
-  }
-  capacity?: number,
-  service_id?: string | undefined,
-  service_type?: string,
-  source?: string,
-  status?: string,
-  terminal_reason?: string | undefined,
-  wheelchair?: boolean,
-}
+const faker = require('faker');
 
 class RideFactory extends Factory<Ride> {
   rideWithNote() {
