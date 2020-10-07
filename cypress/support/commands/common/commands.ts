@@ -15,6 +15,7 @@ Cypress.Commands.add('authenticate', ({ username, password }: LoginSet = {}): vo
 });
 
 declare global {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   namespace Cypress {
     interface Chainable {
       /**

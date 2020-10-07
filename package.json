@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "eslint": "./node_modules/.bin/eslint . --ext .js,.ts"
+    "eslint": "eslint . --ext .js,.ts"
   },
   "author": "",
   "license": "ISC",

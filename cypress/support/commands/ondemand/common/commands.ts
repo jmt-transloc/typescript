@@ -25,6 +25,7 @@ Cypress.Commands.add('cancelRide', ({ rideId }: { rideId: JQuery | string }) => 
 });
 
 declare global {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   namespace Cypress {
     interface Chainable {
       /**

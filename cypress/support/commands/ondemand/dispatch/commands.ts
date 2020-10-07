@@ -18,7 +18,7 @@ Cypress.Commands.add('fillRideForm', ({ ride }: RideForm): void => {
     .type('{selectall}')
     .type(ride.capacity.toString());
 
-  if (ride.wheelchair === true) {
+  if (ride.wheelchair) {
     cy.get('[name=wheelchair]')
       .check();
   }
@@ -34,6 +34,7 @@ Cypress.Commands.add('fillRideForm', ({ ride }: RideForm): void => {
 });
 
 declare global {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   namespace Cypress {
     interface Chainable {
       /**
@@ -43,7 +44,7 @@ declare global {
        * @example const ride = rideFactory.build()
        *          cy.fillRideForm({ ride })
        */
-      fillRideForm({ ride }: RideForm): void
+      fillRideForm({ ride }: RideForm): Cypress.Chainable
     }
   }
 }
